@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title></title>
+        <script language="javascript">
+            function exam(form)
+            {
+                var i=0
+                if(form.one[2].checked)i=i+1
+                if(form.two[0].checked)i=i+1
+                if(form.three[1].checked)i=i+1
+                
+                window.alert("thankyou for taking this online exam!! your score is:"+i);
+            }
+        </script>
+    </head>
+    <body><form onSubmit="exam(this)">
+        <label>
+           1.which is the platform independent language?
+        </label><br><input type="radio" name="one"value="c">
+        <label>c</label>
+    </label><input type="radio" name="one"value="c++">
+        <label>c++</label>
+        <input type="radio" name="one"value="java">
+        <label>java</label>
+        <input type="radio" name="one"value="basic">
+        <label>basic</label><br>
+        2.which is a class of all class in java?
+        </label><br><input type="radio" name="two"value="object">
+        <label>object</label>
+    </label><input type="radio" name="two"value="graphic">
+        <label>graphic</label>
+        <input type="radio" name="two"value="math">
+        <label>math</label>
+        <input type="radio" name="two"value="system">
+        <label>system</label><br>
+        3.frame package is in which package?
+        </label><br><input type="radio" name="three"value="AWT">
+        <label>AWT</label>
+    </label><input type="radio" name="three"value="applet">
+        <label>applet</label>
+        <input type="radio" name="three"value="lang">
+        <label>lang</label>
+        <input type="radio" name="three"value="swing">
+        <label>Swing</label><br>
+        <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
